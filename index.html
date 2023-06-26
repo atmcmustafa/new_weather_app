@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+      body {
+        font-family: Poppins, sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-blue-100 min-h-screen">
+    <h1 class="text-4xl bg-blue-500 text-white py-8 text-center">
+      Weather App Dashboard
+    </h1>
+
+    <section class="px-8 flex flex-wrap w-full mt-12 gap-8">
+      <!-- left bar -->
+      <div class="left-bar flex flex-1 basis-[500px] w-full">
+        <div class="w-full">
+          <h2 class="text-2xl font-bold">Enter a City Name</h2>
+          <form>
+            <input
+              id="input"
+              class="w-full py-4 outline-none px-4 border rounded-lg mt-2"
+              placeholder="E.g, Istanbul, England.."
+              type="text"
+            />
+            <button
+              type="submit"
+              id="submitBtn"
+              class="py-4 rounded-lg bg-blue-500 w-full text-white my-6"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- left bar -->
+      <!-- right bar -->
+      <div class="right opacity-0"></div>
+      <!-- right bar -->
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
